@@ -22,6 +22,9 @@ function App() {
     };
     console.log(newTask);
     // uuidv4();
+    //state manipulation time!
+    //concat / take the old state and add the new one at the end
+    setTasks((oldTasks) => oldTasks.concat(newTask));
   }
 
   function completeTask() {
